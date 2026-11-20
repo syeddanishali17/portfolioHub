@@ -1,0 +1,42 @@
+/* Design tokens. Palette and type pairing follow the editorial reference Danish chose
+   (warm grey paper, near-black ink, forest green, deep green band, soft green band).
+   Sizes were measured from the reference and rounded to our own scale. */
+:root {
+  --bg: #f2f3ef;
+  --surface: #fbfbf9;
+  --ink: #15181a;
+  --ink-2: #3d4341; /* body copy */
+  --muted: #5a615b; /* labels, dates: 5.9:1 on --bg */
+  --accent: #2f5a3e; /* buttons, links: 7.3:1 on --bg */
+  --accent-hover: #24482f;
+  --accent-soft: #e4e8e2; /* soft green band */
+  --chip: #e9ece6;
+  --caution: #7a5600; /* synthetic / non-clinical labels: 5.9:1 on --bg */
+  --line: rgba(21, 24, 26, 0.12);
+  --line-strong: rgba(21, 24, 26, 0.3);
+  --focus: #245a9c;
+
+  --band: #1f2f25;
+  --band-ink: #f1f3f0;
+  --band-muted: #b7c2b6;
+  --band-line: rgba(241, 243, 240, 0.14);
+
+  --serif: "Instrument Serif", Georgia, "Times New Roman", serif;
+  --sans: "Instrument Sans", "Helvetica Neue", Arial, system-ui, sans-serif;
+
+  /* type scale (desktop max ≈ reference) */
+  --fs-section: clamp(3rem, 1.9rem + 4.6vw, 5.8rem); /* 92.8px */
+  --fs-project: clamp(2rem, 1.6rem + 1.2vw, 2.4rem); /* 38.4px */
+  --fs-card: 1.5rem; /* 24px role / card titles */
+  --fs-prose: 1.125rem; /* 18px */
+  --fs-label: 0.8rem; /* 12.8px small caps */
+  --fs-nav: 0.72rem; /* 11.5px */
+
+  --maxw: 1150px;
+  --prose: 640px;
+  --gutter: clamp(1.1rem, 5vw, 2.5rem);
+  --section-y: clamp(4.5rem, 12vw, 9.5rem);
+  --radius: 14px;
+  --shadow: 0 1px 2px rgba(21, 24, 26, 0.04), 0 24px 48px -24px rgba(21, 24, 26, 0.28);
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+}
